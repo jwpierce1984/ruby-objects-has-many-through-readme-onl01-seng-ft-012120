@@ -26,7 +26,7 @@ class Waiter
   end
   
   def best_tipper
-    meals.map do |t| t.tip.size
+    meals.map do |t| t.tip.sort.first
     end
   end
   
